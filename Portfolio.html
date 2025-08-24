@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+
+    a {
+      color: #3b82f6;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: #f5f5f5;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .card h2 {
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+    }
+
+    .card ul {
+      list-style: disc inside;
+    }
+
+    .card li + li {
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sagma</h1>
+    <p class="subtitle">Computer Science Student</p>
+  </header>
+
+  <main class="grid">
+    <section class="card">
+      <h2>About Me</h2>
+      <p>A passionate computer science student with a love for solving problems and building meaningful projects.</p>
+    </section>
+
+    <section class="card">
+      <h2>Skills</h2>
+      <ul>
+        <li>Python, JavaScript, C</li>
+        <li>HTML, CSS, React</li>
+        <li>Nmap, Linux, SQL</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Weather App</strong> – Built with React and OpenWeather API</li>
+        <li><strong>Portfolio Website</strong> – Clean, responsive personal site</li>
+        <li><strong>Task Manager</strong> – Made with Python</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Links</h2>
+      <ul>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Resume (PDF)</a></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your@email.com">sagmakalimakhtar@email.com</a></p>
+      <p>Location: Nashik, India</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with HTML and CSS</p>
+  </footer>
+</body>
+</html>
